@@ -1,9 +1,9 @@
 <!-- app.component.html -->
 <div class="flex flex-col min-h-screen">
-  <app-header (onOpenAuth)="openAuthModal()"></app-header>
+  <app-header (onOpenAuth)="authOpen = true"></app-header>
+  <app-auth-dialog [(open)]="authOpen"></app-auth-dialog>
 
   <main>
-    <router-outlet></router-outlet>
     <app-hero (onOpenAuth)="openAuthModal()"></app-hero>
   </main>
 

@@ -1,0 +1,40 @@
+<header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+  <div class="flex h-16 items-center justify-between px-4 mx-auto max-w-7xl">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 bg-gradient-to-br flex items-center justify-center">
+        <img
+          src="logo.png"
+        alt="Project&Cnct"
+        class="w-full h-full object-contain rounded-lg "
+        />
+      </div>
+      <span class="text-xl font-semibold">
+        <span class="text-[#3b4d64]">Project</span>
+        <span class="text-[#94c2b9]"> & </span>
+        <span class="text-[#3b4d64]">Cnct </span>
+      </span>
+
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="flex items-center gap-8">
+      <button (click)="scrollToSection('home')" class="text-sm hover:text-blue-600 transition">
+        Accueil
+      </button>
+
+      <button (click)="scrollToSection('projects')" class="text-sm hover:text-blue-600 transition">
+        Projets
+      </button>
+
+      <button (click)="scrollToSection('resources')" class="text-sm hover:text-blue-600 transition">
+        Ressources
+      </button>
+
+      <button (click)="handleAuth()" class="bg-[#8c52ff] hover:bg-[#8c52ff] text-white px-3 py-1 rounded">Connexion</button>
+
+    </nav>
+
+  </div>
+</header>

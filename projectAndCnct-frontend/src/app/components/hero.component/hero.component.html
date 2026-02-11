@@ -1,0 +1,71 @@
+<section id="home" class="relative bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-20 md:py-32">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm">
+          <span>✨ Lancez votre carrière de développeur</span>
+        </div>
+
+        <!-- Titre -->
+        <h1 class="col-span-2 text-3xl md:text-3xl lg:text-5xl font-semibold">
+          Construisez un projet qui fait la différence
+        </h1>
+
+        <!-- Description -->
+        <p class="text-lg text-gray-600">
+          Project & Cnct accompagne les développeurs juniors dans le lancement de leur carrière. Lancez des projets et connectez-vous avec une communauté prête à vous aider.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button
+            class="bg-[#8c52ff] hover:bg-purple-600 text-white px-6 py-3 rounded-lg"
+            (click)="scrollToSection('projects')"
+          >
+            Explorer les projets
+          </button>
+          <button
+            class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-100"
+            (click)="scrollToSection('resources')"
+          >
+            Voir les ressources
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="space-y-4">
+          <div class="bg-white p-4 rounded-2xl shadow-lg border">
+            <div class="text-3xl mb-2">🎯</div>
+            <h3 class="mb-2 font-semibold">Projets ciblés</h3>
+            <p class="text-sm text-gray-600">
+              Des idées adaptées à votre niveau et vos objectifs
+            </p>
+          </div>
+          <div class="bg-white p-4 rounded-2xl shadow-lg border">
+            <div class="text-3xl mb-2">🔍</div>
+            <h3 class="mb-2 font-semibold">FAQ</h3>
+            <p class="text-sm text-gray-600">
+              CV, entretiens, lettre de motivation et bien plus
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-8">
+          <div class="bg-gradient-to-br from-blue-600 to-purple-600 p-4 rounded-2xl shadow-lg text-white">
+            <div class="text-3xl mb-2">🚀</div>
+            <h3 class="mb-2 text-white font-semibold">Communauté active</h3>
+            <p class="text-sm text-blue-100">
+              Partagez, apprenez et progressez ensemble
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

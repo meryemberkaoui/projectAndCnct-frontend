@@ -1,20 +1,19 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header.component/header.component';
+import { AuthDialogComponent } from './components/auth-dialog.component/auth-dialog.component';
+import { HeroComponent } from './components/hero.component/hero.component';
 import { FooterComponent } from './components/footer.component/footer.component';
-import { HeroComponent } from './components/hero.component/hero.component'
-
 
 @Component({
   selector: 'app-root',
-  imports: [HeroComponent, HeaderComponent, FooterComponent, RouterOutlet],
+  standalone: true,
+  imports: [HeaderComponent, AuthDialogComponent, HeroComponent, FooterComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('projectAndCnct-frontend');
-  openAuthModal() {
-    console.log('Ouvre modal Auth');
-  }
+  authOpen = false;
 
+  openAuthModal() {
+    this.authOpen = true;
+  }
 }
