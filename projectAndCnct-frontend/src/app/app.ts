@@ -4,11 +4,12 @@ import { AuthDialogComponent } from './components/auth-dialog.component/auth-dia
 import { HeroComponent } from './components/hero.component/hero.component';
 import { FooterComponent } from './components/footer.component/footer.component';
 import { ProjectIdeasComponent } from './components/project-ideas.component/project-ideas.component'
+import { ResourcesComponent } from './components/resources.component/resources.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, AuthDialogComponent, HeroComponent, FooterComponent, ProjectIdeasComponent],
+  imports: [HeaderComponent, AuthDialogComponent, HeroComponent, FooterComponent, ProjectIdeasComponent, ResourcesComponent],
   templateUrl: './app.html',
 })
 export class App {

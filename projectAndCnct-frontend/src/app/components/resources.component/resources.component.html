@@ -1,0 +1,28 @@
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl mb-4">Ressources Pratiques</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Tous les outils et conseils dont vous avez besoin pour réussir votre recherche d'emploi
+      </p>
+    </div>
+
+    <mat-tab-group>
+      <mat-tab label="CV">
+        <div class="mt-6">
+          <app-resume-tips [tips]="cvTips"></app-resume-tips>
+        </div>
+      </mat-tab>
+      <mat-tab label="Entretiens">
+        <div class="mt-6">
+          <app-interview-tips [tips]="interviewTips"></app-interview-tips>
+        </div>
+      </mat-tab>
+      <mat-tab label="FAQ">
+        <div class="mt-6">
+          <app-faq [faqs]="faqs"></app-faq>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</section>

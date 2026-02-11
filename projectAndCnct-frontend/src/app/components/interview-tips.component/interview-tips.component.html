@@ -1,0 +1,12 @@
+<div class="space-y-6">
+  <div *ngFor="let tip of tips" class="border-l-4 border-green-600 pl-4">
+    <h4 class="mb-2">{{ tip.title }}</h4>
+    <p class="text-gray-600">{{ tip.content }}</p>
+  </div>
+
+  <div class="mt-8 p-4 bg-green-50 rounded-lg">
+    <p class="text-sm">
+      💡 <strong>Pro tip :</strong> Enregistrez-vous en train de répondre à des questions d'entretien courantes.
+    </p>
+  </div>
+</div>
