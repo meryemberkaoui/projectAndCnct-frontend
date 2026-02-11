@@ -3,11 +3,12 @@ import { HeaderComponent } from './components/header.component/header.component'
 import { AuthDialogComponent } from './components/auth-dialog.component/auth-dialog.component';
 import { HeroComponent } from './components/hero.component/hero.component';
 import { FooterComponent } from './components/footer.component/footer.component';
+import { ProjectIdeasComponent } from './components/project-ideas.component/project-ideas.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, AuthDialogComponent, HeroComponent, FooterComponent],
+  imports: [HeaderComponent, AuthDialogComponent, HeroComponent, FooterComponent, ProjectIdeasComponent],
   templateUrl: './app.html',
 })
 export class App {
